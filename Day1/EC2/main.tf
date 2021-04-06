@@ -3,8 +3,12 @@ resource "aws_instance" "myec22021" {
   instance_type = "t2.micro"
   count         = var.instanceCount
   tags = {
-    "Name" = "nsp-myec2-2021 ${count.index + 1}"
+    "Name" = "nsp-myec2-2021-${var.tags[count.index]}"
   }
+}
+
+resource "aws_s3_bucket" "mys3" {
+    bucket = "nsp-terraform-2021"
 }
 
 output "myec2ip" {

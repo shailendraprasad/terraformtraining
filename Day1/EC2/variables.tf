@@ -9,3 +9,8 @@ variable "instanceCount" {
   default     = 2
   type        = number
 }
+
+variable "tags" {
+  description = "tags details"
+  default     = ["Tag1","Tag2"]
+}
