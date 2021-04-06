@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket ="nsp-tfstate-2021"
-    key = "tfstate"
+    key = "dev/tfstate"
     region = "us-east-1"
   }
 }
