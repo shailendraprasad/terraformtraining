@@ -12,5 +12,7 @@ variable "instanceCount" {
 
 variable "tags" {
   description = "tags details"
-  default     = ["Tag1","Tag2"]
+  default     =  {
+    ENV : "DEFAULT"
+  }
 }

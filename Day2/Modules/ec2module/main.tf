@@ -3,7 +3,7 @@ resource "aws_instance" "myec22021" {
   instance_type = "t2.micro"
   count         = var.instanceCount
   tags = {
-    "Name" = "nsp-myec2-2021-${var.tags[count.index]}"
+    "Name" = "nsp-myec2-2021-${var.tags.ENV}"
   }
 }
 
