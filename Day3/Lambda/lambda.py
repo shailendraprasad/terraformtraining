@@ -1,2 +1,2 @@
-def lambdaHandler(ebent, context):
+def lambdaHandler(event, context):
     print("Hello from my lambda -nsp")
